@@ -2,6 +2,9 @@ pipeline {
   agent any 
   stages {
     stage("first") {
+      options{
+	skipDefaultCheckout()
+      }	    
       steps {
         echo "first build"
       }
