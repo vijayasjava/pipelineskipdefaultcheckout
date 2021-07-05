@@ -11,5 +11,10 @@ pipeline {
         echo "second build"
       }
     }
+    stage("develop addition") {
+    	steps {
+	  echo "develop branch addition"
+	}
+    }
   }
 }
